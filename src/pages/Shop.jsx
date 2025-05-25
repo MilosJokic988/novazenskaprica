@@ -38,25 +38,11 @@ const Shop = () => {
   const navigate = useNavigate();
   const { addToCart } = useCart();
 
-  // Komentari po proizvodu: { productId: [ "komentar1", "komentar2" ] }
-  const [comments, setComments] = useState({});
+  // Držimo stanje ocena za svaki proizvod (id => rating)
+  const [ratings, setRatings] = useState({});
 
-  const [newComment, setNewComment] = useState({}); // privremeni tekst komentara po proizvodu
-
-  const handleCommentChange = (productId, text) => {
-    setNewComment(prev => ({ ...prev, [productId]: text }));
-  };
-
-  const handleCommentSubmit = (productId, e) => {
-    e.preventDefault();
-    if (!newComment[productId]) return;
-
-    setComments(prev => {
-      const productComments = prev[productId] || [];
-      return { ...prev, [productId]: [...productComments, newComment[productId]] };
-    });
-
-    setNewComment(prev => ({ ...prev, [productId]: "" }));
+  const handleRating = (productId, ratingValue) => {
+    setRatings(prev => ({ ...prev, [productId]: ratingValue }));
   };
 
   return (
@@ -71,32 +57,23 @@ const Shop = () => {
             <h3>{product.name}</h3>
             <p className="product-desc">{product.description}</p>
             <p className="product-price">{product.price}</p>
+
+            {/* Zvezdice */}
+            <div className="rating">
+              {[1, 2, 3, 4, 5].map(value => (
+                <span
+                  key={value}
+                  className={`star ${ratings[product.id] >= value ? "filled" : ""}`}
+                  onClick={() => handleRating(product.id, value)}
+                >
+                  ★
+                </span>
+              ))}
+            </div>
+
             <button className="buy-button" onClick={() => addToCart(product)}>
               Dodaj u korpu
             </button>
-
-            {/* Sekcija komentara */}
-            <div className="comments-section">
-              <h4>Komentari:</h4>
-              {comments[product.id]?.length > 0 ? (
-                <ul>
-                  {comments[product.id].map((comment, i) => (
-                    <li key={i}>{comment}</li>
-                  ))}
-                </ul>
-              ) : (
-                <p>Još nema komentara.</p>
-              )}
-              <form onSubmit={(e) => handleCommentSubmit(product.id, e)}>
-                <input
-                  type="text"
-                  placeholder="Napiši komentar..."
-                  value={newComment[product.id] || ""}
-                  onChange={e => handleCommentChange(product.id, e.target.value)}
-                />
-                <button type="submit">Pošalji</button>
-              </form>
-            </div>
           </div>
         ))}
       </div>
