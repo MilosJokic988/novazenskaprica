@@ -62,33 +62,55 @@
 }
 
 /* Slike */
+/* Osnovni stilovi za slike */
 .scattered-img {
   position: absolute;
-  width: 220px;
-  border-radius: 16px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  transition: transform 0.4s ease;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
 }
-
 .scattered-img:hover {
   transform: scale(1.05) rotate(1deg);
 }
 
-.img1 {
-  top: 10%;
-  left: 5%;
-  transform: rotate(-5deg);
+/* Specifične pozicije (desktop) */
+.img1 { top: 100px; left: 5%; }
+.img2 { top: 200px; right: 5%; }
+.img3 { bottom: 100px; left: 40%; }
+
+@media screen and (max-width: 768px) {
+  .scattered-img {
+    width: 120px;
+    opacity: 0.3; /* Poluprovidne slike */
+    pointer-events: none; /* Onemogući klikove preko njih */
+    filter: blur(1px); /* Opcionalno: blagi blur za još nežniji efekat */
+  }
+
+  .img1 {
+    top: 80px;
+    left: 10px;
+  }
+
+  .img2 {
+    top: 160px;
+    right: 10px;
+  }
+
+  .img3 {
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .home-content {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .home-buttons button {
+    margin: 5px;
+    width: 100%;
+  }
 }
 
-.img2 {
-  top: 35%;
-  right: 8%;
-  transform: rotate(7deg);
-}
-
-.img3 {
-  bottom: 5%;
-  left: 25%;
-  transform: rotate(-3deg);
-}
