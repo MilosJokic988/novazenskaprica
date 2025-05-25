@@ -1,0 +1,42 @@
+html, body {
+  
+  margin: 0;
+  padding: 0;
+  height: 100%;
+   /* Sprečava horizontalno skrolovanje */
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+main {
+  flex-grow: 1;
+}
+
+
+
+.footer-dark {
+  background-color: #0b0b0b; /* Skoro crna pozadina */
+  color: #a3a3a3; /* Svetlo siva tekstura */
+  border-top: 2px solid #6b0f0f; /* Kvravo crvena linija na vrhu */
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 4px #6b0f0f;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.footer-dark small {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.footer-dark:hover {
+  color: #f44336;
+  text-shadow: 0 0 10px #f44336;
+  cursor: default;
+}
