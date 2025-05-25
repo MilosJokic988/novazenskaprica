@@ -7,6 +7,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
+      {/* Naslov i dugmad */}
       <div className="home-content">
         <h1>Dobrodošli u Novu Žensku Priču</h1>
         <p>
@@ -22,6 +23,12 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Razbacane slike */}
+      <img src="/images/style1.jpg" alt="Salon 1" className="scattered-img img1" />
+      <img src="/images/style2.jpg" alt="Salon 2" className="scattered-img img2" />
+      <img src="/images/style3.jpg" alt="Salon 3" className="scattered-img img3" />
+
+      {/* Footer */}
       <footer className="home-footer">
         <p>© 2025 | Nova Ženska Priča | Sa ljubavlju i stilom 💇‍♀️</p>
       </footer>

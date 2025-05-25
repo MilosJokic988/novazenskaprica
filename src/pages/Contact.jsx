@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import './Contact.css';
 
 const Contact = () => {
-  const vesnaEmail = "vesna@novezenskeporice.rs";
-  const vesnaPhone = "+381601234567";
+  const navigate = useNavigate();
+  const vesnaEmail = "novazenskaprica11@gmail.com";
+  const vesnaPhone = "+381694638884";
 
   return (
     <div className="contact-container">
@@ -18,7 +20,7 @@ const Contact = () => {
 
       <button 
         className="schedule-button" 
-        onClick={() => window.location.href = `mailto:${vesnaEmail}?subject=Zakazivanje%20termina`}
+        onClick={() => navigate("/booking")}
       >
         Zakaži termin
       </button>

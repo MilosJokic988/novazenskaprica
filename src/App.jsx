@@ -6,7 +6,9 @@ import Gallery from './pages/Gallery';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Checkout from './pages/Checkout';
+import Booking from './pages/Booking';
 import MainLayout from './components/MainLayout';
+
 import './App.css';
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="checkout" element={<Checkout />} />
+        <Route path="/booking" element={<Booking />} />
       </Route>
     </Routes>
   );

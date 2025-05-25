@@ -1,39 +1,12 @@
-# Nova Ženska Priča - Frizerski Salon Web Aplikacija
+# React + Vite
 
-Dobrodošli u zvanični repo web aplikacije za frizerski salon **Nova Ženska Priča**. Ovaj projekat je urađen u React-u sa fokusom na elegantan, moderan dizajn i jednostavnu upotrebu.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## Opis projekta
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Aplikacija omogućava pregled i rezervaciju usluga, pregled galerije, kupovinu proizvoda u prodavnici, kao i kontakt sa salonem. Posebna funkcionalnost je korpa za kupovinu sa podrškom za pregled i checkout.
+## Expanding the ESLint configuration
 
----
-
-## Tehnologije
-
-- React (Create React App / Vite)
-- React Router DOM (za navigaciju)
-- Bootstrap 5 (za UI komponentne i responsive meni)
-- CSS (custom stilovi sa fontom Cinzel)
-- React Context API (za upravljanje korpom)
-- React Hooks
-
----
-
-## Funkcionalnosti
-
-- Sticky header sa navigacijom i hamburger menijem
-- Dinamička korpa sa prikazom broja artikala
-- Kategorije usluga sa podkategorijama i cenama
-- Prodavnica sa proizvodima i mogućnošću kupovine
-- Galerija i kontakt forma
-- Responsive dizajn za mobilne i desktop uređaje
-
----
-
-## Instalacija
-
-1. Klonirajte repozitorijum:
-   ```bash
-   git clone https://github.com/tvojusername/nova-zenska-prica.git
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
