@@ -21,7 +21,7 @@ const productsData = [
   {
     id: 3,
     name: "Šampon protiv opadanja kose",
-    description: "Zaustavlja opadanje i podstiče rast nove kose, na bazi belog luka, đumbira, ricinusa i vitamina E.",
+    description: " Podstiče rast nove kose, na bazi belog luka, đumbira, ricinusa i vitamina E.",
     price: "1650rsd",
     image: "/images/sampon1.jpeg",
   },

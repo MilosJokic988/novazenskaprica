@@ -125,3 +125,31 @@ button[type="submit"]:disabled {
   box-shadow: none;
   color: #bbb;
 }
+form select {
+  padding: 0.6rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  background-color: #1e1e1e;
+  color: #f5f1ec;
+  border: 1px solid #e8c2b9;
+}
+
+.total-price {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #222;
+  font-weight: bold;
+}
+.total-price-summary {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}

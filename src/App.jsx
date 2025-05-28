@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 import Checkout from './pages/Checkout';
 import Booking from './pages/Booking';
 import MainLayout from './components/MainLayout';
-
+import Sminkanje from './pages/Sminkanje';
 import './App.css';
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="checkout" element={<Checkout />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/sminkanje" element={<Sminkanje/>} />
       </Route>
     </Routes>
   );

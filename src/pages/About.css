@@ -83,3 +83,27 @@
 .back-button:hover {
   background-color: #a63f34;
 }
+.owner-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.makeup-gallery-button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #b57e72;
+  color: #f5f1ec;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-family: 'Cinzel', serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.makeup-gallery-button:hover {
+  background-color: #d9a28c;
+  color: #121212;
+}

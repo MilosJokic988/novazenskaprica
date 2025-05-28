@@ -29,7 +29,14 @@ const ScissorsIcon = () => (
 const Header = () => {
   const { cartItems } = useCart();
   const navigate = useNavigate();
-
+ 
+ 
+  const closeNavbar = () => {
+    const navbarToggler = document.querySelector('.navbar-collapse');
+    if (navbarToggler.classList.contains('show')) {
+      new window.bootstrap.Collapse(navbarToggler).hide();
+    }
+  };
   return (
     <nav className="navbar navbar-expand-lg navbar-dark custom-navbar px-4">
       <NavLink className="navbar-brand d-flex align-items-center" to="/">
@@ -51,29 +58,29 @@ const Header = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-auto">
           <li className="nav-item">
-            <NavLink className="nav-link" to="/services">
-              Usluge
+            <NavLink className="nav-link" to="/services" onClick={closeNavbar}>
+                  Usluge
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/shop">
+            <NavLink className="nav-link" to="/shop" onClick={closeNavbar}>
               Prodavnica
+          </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/gallery" onClick={closeNavbar}>
+            Galerija
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/gallery">
-              Galerija
+            <NavLink className="nav-link" to="/about" onClick={closeNavbar}>
+             O nama
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/about">
-              O nama
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/contact">
+            <NavLink className="nav-link" to="/contact" onClick={closeNavbar}>
               Kontakt
-            </NavLink>
+             </NavLink>
           </li>
         </ul>
       </div>
