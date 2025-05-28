@@ -3,7 +3,7 @@
 Dobrodošli u GitHub repozitorijum projekta **Nova Ženska Priča** – moderni web sajt za frizerski i kozmetički salon koji kombinuje elegantan dizajn sa funkcionalnošću poput prikaza usluga, galerije radova, online prodavnice i sistema komentara i ocenjivanja proizvoda.
 
 ## 🔗 Live Demo
-👉 [Pogledaj uživo](https://tvoj-sajt-link.com)
+👉 [Pogledaj uživo](novazenskaprica.vercel.app)
 
 ## 🛠️ Tehnologije korišćene
 
