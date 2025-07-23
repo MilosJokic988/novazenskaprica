@@ -3,7 +3,7 @@
   color: #f5f1ec;
   min-height: 100vh;
   padding: 3rem 2rem;
-  font-family: 'Cinzel', serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
@@ -19,7 +19,8 @@
   font-size: 1.3rem;
   margin-bottom: 2.5rem;
   color: #d1c7bf;
-  font-style: italic;
+  
+   font-family: 'Raleway', sans-serif;
 }
 
 .products-grid {
