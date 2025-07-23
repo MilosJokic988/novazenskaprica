@@ -1,0 +1,63 @@
+.contact-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #f0e7e7;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.contact-container h1 {
+  margin-bottom: 1rem;
+  color: #a64d79; /* tamno roze/ljubičasta */
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.contact-info a {
+  color: #a64d79;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.schedule-button {
+  margin-top: 2rem;
+  background-color: #a64d79;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-button:hover {
+  background-color: #842e5b;
+}
+.icon {
+  margin-right: 8px;
+  color: #d63384; /* ružičasta nijansa, možeš promeniti */
+  vertical-align: middle;
+}
+.contact-info p {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}

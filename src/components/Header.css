@@ -1,0 +1,86 @@
+/* Header.css - svetlija verzija */
+
+.custom-navbar {
+  background-color: #3e2c49; /* malo svetlija ljubičasta baza */
+  border-bottom: 2px solid #f7c6d7; /* pastelno roza - svetlija */
+  font-family: 'Cinzel', serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.custom-navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #fbd7e9; /* još svetlija pastelno roza */
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 12px #fbd7e9;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #ffd6e8;
+  text-shadow: 0 0 20px #ffd6e8;
+}
+
+.scissors-icon {
+  stroke: #fbd7e9;
+  fill: transparent;
+  transition: stroke 0.3s ease;
+}
+
+.scissors-icon:hover {
+  stroke: #ffd6e8;
+  filter: drop-shadow(0 0 8px #ffd6e8);
+}
+
+.navbar-nav .nav-link {
+  color: #f9d9e6;
+  font-weight: 600;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ffd6e8;
+  text-shadow: 0 0 10px #ffd6e8;
+}
+
+.navbar-toggler {
+  border-color: #fbd7e9;
+}
+
+.navbar-toggler-icon {
+  filter: drop-shadow(0 0 2px #fbd7e9);
+}
+
+/* Responsive tweak za manje ekrane */
+@media (max-width: 767px) {
+  .custom-navbar .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+.cart-button {
+  background-color: transparent;
+  border: 2px solid #f7c6d7;
+  color: #f7c6d7;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.cart-button:hover {
+  background-color: #f7c6d7;
+  color: #2c1a30;
+  box-shadow: 0 0 8px #fbb1d0;
+}
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}

@@ -1,0 +1,50 @@
+.services-container {
+  padding: 3rem 2rem;
+  background: #fff0f5; /* svetlo roze pozadina */
+  color: #2a1d1d;
+  font-family: 'Cinzel', serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-category {
+  margin-bottom: 3rem;
+  background-color: #fce4ec; /* nežno roze kartice */
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 12px #e3a4b4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 18px #ecb6c6;
+}
+
+.service-category h2 {
+  color: #c2185b;
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 0 4px #f8bbd0;
+  border-bottom: 2px solid #ec407a;
+  padding-bottom: 0.5rem;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px dashed #f48fb1;
+}
+
+.service-item span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6a1b4d;
+}
+
+.service-item span:last-child {
+  color: #ad1457;
+}
