@@ -89,6 +89,9 @@
     pointer-events: none; /* Onemogući klikove preko njih */
     filter: blur(1px); /* Opcionalno: blagi blur za još nežniji efekat */
   }
+   body, .home-container {
+    font-family: 'Dancing Script', cursive !important;
+  }
     .home-content h1 {
     font-size: 1.6rem;
     margin-top: 60px;
