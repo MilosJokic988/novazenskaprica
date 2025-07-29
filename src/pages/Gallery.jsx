@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './Gallery.css';
 
-const webpImages = Array.from({ length: 7 }, (_, i) => `/images/slika${i + 2}.webp`);
-const jpegImages = Array.from({ length: 5 }, (_, i) => `/images/slika${i + 9}.jpeg`);
+const webpImages = Array.from({ length: 8 }, (_, i) => `/images/slika${i + 1}.webp`);
+const jpegImages = Array.from({ length: 18 }, (_, i) => `/images/slika${i + 9}.jpeg`);
 const images = [...webpImages, ...jpegImages];
 
 
