@@ -13,3 +13,47 @@
 
 ## 📁 Struktura projekta
 
+public/
+└── images/
+└── favicon.ico
+src/
+├── components/
+│ ├── Header.jsx
+│ ├── Footer.jsx
+│ └── MainLayout.jsx
+├── pages/
+│ ├── Home.jsx
+│ ├── Omeni.jsx
+│ ├── Usluge.jsx
+│ └── Kontakt.jsx
+├── App.jsx
+└── main.jsx
+index.html
+
+bash
+Copy
+Edit
+
+## 🚀 Pokretanje projekta lokalno
+
+🌐 Deploy
+Aplikacija je deployovana na Vercel.
+Prilikom deploya, koristi se custom domen: https://tvojdomen.rs
+
+📌 Ključne funkcionalnosti
+Responzivan dizajn
+
+Prikaz usluga
+
+Kontakt stranica sa osnovnim podacima
+
+Jednostavan i elegantan UI
+
+Favicon za brand identitet
+
+📷 Screenshot
+(Ovde možeš dodati sliku ekrana sajta ako želiš)
+
+🧠 Autor
+Milutin Jokić – Frontend developer & dizajner
+
