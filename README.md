@@ -12,9 +12,3 @@ Ovo je zvanični sajt “Nova ženska priča” – moderna i profesionalna veb 
 - CSS (običan ili po potrebi)
 
 ---
-
-## Instalacija i pokretanje lokalno
-
-1. Kloniraj repozitorijum:  
-   ```bash
-   git clone <URL tvog repozitorijuma>
