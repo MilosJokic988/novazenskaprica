@@ -1,12 +1,67 @@
-# React + Vite
+# Nova Ženska P(r)iča — Web Sajt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ovo je zvanični sajt frizerskog salona **Nova Ženska P(r)iča**, razvijen pomoću **React + Vite** i hostovan preko **Vercela**.
 
-Currently, two official plugins are available:
+## 🔧 Tehnologije
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [React Router DOM](https://reactrouter.com/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- Deployment preko [Vercel](https://vercel.com/)
 
-## Expanding the ESLint configuration
+## 📁 Struktura Projekta
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+/
+├── public/ # statički fajlovi (favicon, robots.txt itd.)
+├── src/
+│ ├── components/ # Header, Footer, Layout
+│ ├── pages/ # Home, Usluge, Prodavnica, Galerija, O nama, Kontakt
+│ └── App.jsx
+├── api/
+│ └── sitemap.js # dinamički sitemap.xml fajl
+├── vite.config.js
+├── vercel.json # podešavanja za rewrite i content-type
+└── README.md
+
+markdown
+Copy
+Edit
+
+## 🌐 Sitemap
+
+Sitemap se dinamički generiše putem `api/sitemap.js` rute. Dodata je i `vercel.json` konfiguracija da Content-Type bude `application/xml`.
+
+### Primer izlaza:
+https://novazenskaprica.rs/api/sitemap
+
+markdown
+Copy
+Edit
+
+### robots.txt
+Fajl `robots.txt` se nalazi u `public/` folderu i sadrži:
+
+User-agent: *
+Allow: /
+Sitemap: https://novazenskaprica.rs/sitemap.xml
+
+markdown
+Copy
+Edit
+
+> Sitemap se automatski preusmerava na `/api/sitemap` putem Vercel rewrites.
+
+## ✅ Status Google Indexiranja
+
+- Vlasništvo domena potvrđeno u Google Search Console.
+- Sitemap uspešno poslat i obrađen.
+- Stranice otkrivene: Usluge, Prodavnica, Galerija, O nama, Kontakt
+
+## 🚀 Pokretanje lokalno
+
+```bash
+npm install
+npm run dev
+🛠 Deploy
+Deployment se vrši automatski preko Vercela nakon svakog commit-a.
