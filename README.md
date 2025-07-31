@@ -1,31 +1,12 @@
-# Nova ženska priča
+# React + Vite
 
-Ovo je zvanični sajt “Nova ženska priča” – moderna i profesionalna veb prezentacija namenjena predstavljanju usluga i informacija za žensku publiku.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## Tehnologije korišćene
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- React  
-- Vite  
-- Vercel (za hosting i deployment)  
-- CSS (običan ili po potrebi)
+## Expanding the ESLint configuration
 
----
-
-## Instalacija i pokretanje lokalno
-
-1. Kloniraj repozitorijum:  
-   ```bash
-  Deployment
-Projekat je hostovan na Vercel platformi. Svaki push na glavnu granu (main/master) automatski pokreće deploy.
-
-Sitemap
-Sitemap se nalazi u public/sitemap.xml i konfigurisan je da olakša indeksiranje sajta od strane pretraživača poput Google-a.
-
-Kontakt
-Za sve dodatne informacije i pitanja, kontaktirajte:
-Miloš Jokić
-Email: jokicmilos152@gmail.com
-
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
